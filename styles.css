@@ -79,7 +79,6 @@ body {
   margin-left: 40px;
   margin-top: 5px;
   box-shadow: 0px 5px 10px 1px inset #000000;
-  position: fixed;
 }
 .dot {
   position: fixed;
@@ -90,7 +89,6 @@ body {
   margin-left: 100px;
   margin-top: 5px;
   box-shadow: 0px 5px 10px 1px inset #000000;
-  position: fixed;
 }
 .notification {
   display: flex;
@@ -130,13 +128,13 @@ body {
   height: 10px;
   width: 10px;
   border-radius: 50%;
-  background: rgba(0, 0, 0, 0.5);
+  background: var(--background);
   border: 1px solid white;
   margin-left: 10px;
   margin-top: 10px;
 }
-.passcode button[type='radio'].active {
-  background: white;
+.active {
+  --background: white;
 }
 .number {
   height: 200px;
